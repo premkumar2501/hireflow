@@ -1,7 +1,8 @@
 import { useState } from "react";
-import type { Role, WorkspacePage, WorkspaceUser } from "../types";
-import { roleLabels } from "../data";
+import type { Role, WorkspacePage, WorkspaceUser } from "../feature/types";
 import { Icon } from "./Icon";
+import { roleLabels } from "../feature/data";
+
 
 export function Topbar({
   user,

@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { applications, recentCandidates } from "../data";
-import type { Role } from "../types";
+import { applications, recentCandidates } from "../feature/data";
+import type { Role } from "../feature/types";
 import { Icon } from "../components/Icon";
+
 
 export function ApplicationsPage({ role }: { role: Role }) {
   const [view, setView] = useState("List view");

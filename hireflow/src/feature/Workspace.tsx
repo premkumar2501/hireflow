@@ -1,12 +1,14 @@
 import { useState } from "react";
-import { Sidebar } from "./components/Sidebar";
-import { Topbar } from "./components/Topbar";
-import { DashboardPage } from "./pages/DashboardPage";
-import { JobsPage } from "./pages/JobsPage";
-import { ApplicationsPage } from "./pages/ApplicationsPage";
-import { OtherPages } from "./pages/OtherPages";
+
 import type { Role, WorkspacePage, WorkspaceUser } from "./types";
 import "./workspace.css";
+import "./workspace-tailwind.css";
+import { Sidebar } from "../components/Sidebar";
+import { Topbar } from "../components/Topbar";
+import { DashboardPage } from "../pages/DashboardPage";
+import { JobsPage } from "../pages/JobsPage";
+import { ApplicationsPage } from "../pages/ApplicationsPage";
+import { OtherPages } from "../pages/OtherPages";
 
 export function Workspace({
   user,
@@ -19,7 +21,7 @@ export function Workspace({
   const [page, setPage] = useState<WorkspacePage>("Dashboard");
   const [mobileNav, setMobileNav] = useState(false);
   return (
-    <div className="workspace-layout">
+    <div className="workspace-layout min-h-screen bg-slate-50 text-slate-900 antialiased">
       <Sidebar
         role={role}
         page={page}

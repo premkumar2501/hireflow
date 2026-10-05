@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
-import { jobs } from "../data";
-import type { Role } from "../types";
+import type { Role } from "../feature/types";
+import { jobs } from "../feature/data";
 import { Icon } from "../components/Icon";
+
 
 export function JobsPage({
   role,

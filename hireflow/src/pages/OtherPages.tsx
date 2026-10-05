@@ -1,7 +1,7 @@
 import { useState } from "react";
+import type { WorkspacePage, WorkspaceUser } from "../feature/types";
 import { Icon } from "../components/Icon";
-import { recentCandidates } from "../data";
-import type { WorkspacePage, WorkspaceUser } from "../types";
+import { recentCandidates } from "../feature/data";
 
 export function OtherPages({
   page,

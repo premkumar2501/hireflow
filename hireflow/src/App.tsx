@@ -6,7 +6,7 @@ import "./App.css";
 import { clearTokens, saveTokens } from "./utils/token";
 import { api } from "./api/api";
 import { TokenKeys } from "./utils/enum";
-import { Workspace } from "./features/workspace/Workspace";
+import { Workspace } from "./feature/Workspace";
 
 type User = {
   id: number;

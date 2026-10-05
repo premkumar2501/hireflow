@@ -1,8 +1,9 @@
 import { useState } from "react";
-import logo from "../../../assets/images/hireflow_logo.png";
-import { roleLabels, roleNav } from "../data";
-import type { Role, WorkspacePage } from "../types";
+import logo from "../assets/images/hireflow_logo.png";
+import type { Role, WorkspacePage } from "../feature/types";
 import { Icon } from "./Icon";
+import { roleLabels, roleNav } from "../feature/data";
+
 
 type Props = {
   role: Role;
@@ -109,7 +110,7 @@ export function Sidebar({
           <div className="preview-box">
             <span>PREVIEW ROLE</span>
             <button
-              onClick={() => setRoleMenu(!roleMenu)}
+              // onClick={() => setRoleMenu(!roleMenu)}
               aria-expanded={roleMenu}
             >
               {roleLabels[role]}
